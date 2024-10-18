@@ -24,14 +24,16 @@ A prototype inventory system for Godot 4 that demonstrates loading and managing 
 ```
 
 ## Usage
-gdscriptCopy# Example of adding items to inventory
+Example of adding items to inventory
+```gdscript
 var inventory = preload("res://scripts/Inventory.gd").new()
 inventory.add_item("health_potion", 5)
+```
 
 ## Customization
 Add new items by editing the inventory_items.json file:
 ```json
-jsonCopy{
+{
     "new_item": {
         "id": "new_item",
         "name": "New Item",
