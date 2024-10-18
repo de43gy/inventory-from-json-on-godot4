@@ -1,0 +1,51 @@
+{
+	"health_potion": {
+		"id": "health_potion",
+		"name": "Зелье здоровья",
+		"description": "Восстанавливает 50 HP",
+		"type": "consumable",
+		"properties": {
+			"heal_amount": 50,
+			"duration": 0
+		},
+		"stack_size": 99,
+		"icon_path": "res://assets/icons/health_potion.png"
+	},
+	"iron_sword": {
+		"id": "iron_sword",
+		"name": "Железный меч",
+		"description": "Базовый меч для начинающих воинов",
+		"type": "weapon",
+		"properties": {
+			"damage": 15,
+			"durability": 100,
+			"attack_speed": 1.2
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/iron_sword.png"
+	},
+	"leather_armor": {
+		"id": "leather_armor",
+		"name": "Кожаная броня",
+		"description": "Базовая защита от физического урона",
+		"type": "armor",
+		"properties": {
+			"defense": 10,
+			"weight": 5,
+			"durability": 50
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/leather_armor.png"
+	},
+	"gold_coin": {
+		"id": "gold_coin",
+		"name": "Золотая монета",
+		"description": "Основная валюта",
+		"type": "currency",
+		"properties": {
+			"value": 1
+		},
+		"stack_size": 999,
+		"icon_path": "res://assets/icons/gold_coin.png"
+	}
+}
