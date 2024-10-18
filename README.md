@@ -29,6 +29,7 @@ inventory.add_item("health_potion", 5)
 
 ## Customization
 Add new items by editing the inventory_items.json file:
+```json
 jsonCopy{
     "new_item": {
         "id": "new_item",
@@ -41,6 +42,7 @@ jsonCopy{
         "stack_size": 99
     }
 }
+```
 
 ## License
 MIT License
