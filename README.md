@@ -13,6 +13,7 @@ A prototype inventory system for Godot 4 that demonstrates loading and managing 
 
 ## Project Structure
 
+```
 ├── data/
 │   └── inventory_items.json    # Item database
 ├── scripts/
@@ -20,7 +21,7 @@ A prototype inventory system for Godot 4 that demonstrates loading and managing 
 │   └── InventoryUI.gd         # UI handling
 └── scenes/
     └── InventoryUI.tscn       # Main inventory scene
-
+```
 
 ## Usage
 gdscriptCopy# Example of adding items to inventory
