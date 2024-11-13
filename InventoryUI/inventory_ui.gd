@@ -1,4 +1,3 @@
-# InventoryUI.gd
 extends Control
 
 @onready var item_list = $PanelContainer/HBoxContainer/ItemList
@@ -12,18 +11,15 @@ func _ready():
 	inventory.load_inventory_data()
 	refresh_item_list()
 	
-	# Подключаем сигнал выбора предмета
 	item_list.item_selected.connect(_on_item_selected)
 
 func refresh_item_list():
 	item_list.clear()
 	
-	# Добавляем все предметы из данных инвентаря
 	for item_id in inventory.inventory_data.keys():
 		var item = inventory.inventory_data[item_id]
 		item_list.add_item(item["name"])
 		
-		# Сохраняем данные предмета в metadata для легкого доступа
 		var idx = item_list.get_item_count() - 1
 		item_list.set_item_metadata(idx, item)
 
@@ -34,15 +30,12 @@ func _on_item_selected(index: int):
 func update_property_list(item: Dictionary):
 	property_list.clear()
 	
-	# Отображаем базовые свойства
 	property_list.add_item("ID: " + item["id"])
 	property_list.add_item("Тип: " + item["type"])
 	property_list.add_item("Макс. в стаке: " + str(item["stack_size"]))
 	
-	# Отображаем дополнительные свойства
 	for prop_name in item["properties"]:
 		var value = item["properties"][prop_name]
 		property_list.add_item(prop_name + ": " + str(value))
 	
-	# Обновляем описание
 	description_label.text = item["description"]

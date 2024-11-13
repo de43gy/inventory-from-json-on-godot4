@@ -1,20 +1,20 @@
 {
 	"health_potion": {
 		"id": "health_potion",
-		"name": "Зелье здоровья",
-		"description": "Восстанавливает 50 HP",
+		"name": "Health Potion",
+		"description": "Restores 50 HP",
 		"type": "consumable",
 		"properties": {
 			"heal_amount": 50,
 			"duration": 0
 		},
 		"stack_size": 99,
-		"icon_path": "res://assets/icons/health_potion.png"
+		"icon_path": "res://assets/icons/health_potion.webp"
 	},
 	"iron_sword": {
 		"id": "iron_sword",
-		"name": "Железный меч",
-		"description": "Базовый меч для начинающих воинов",
+		"name": "Iron Sword",
+		"description": "Basic sword for novice warriors",
 		"type": "weapon",
 		"properties": {
 			"damage": 15,
@@ -22,12 +22,12 @@
 			"attack_speed": 1.2
 		},
 		"stack_size": 1,
-		"icon_path": "res://assets/icons/iron_sword.png"
+		"icon_path": "res://assets/icons/iron_sword.webp"
 	},
 	"leather_armor": {
 		"id": "leather_armor",
-		"name": "Кожаная броня",
-		"description": "Базовая защита от физического урона",
+		"name": "Leather Armor",
+		"description": "Basic protection against physical damage",
 		"type": "armor",
 		"properties": {
 			"defense": 10,
@@ -35,17 +35,210 @@
 			"durability": 50
 		},
 		"stack_size": 1,
-		"icon_path": "res://assets/icons/leather_armor.png"
+		"icon_path": "res://assets/icons/leather_armor.webp"
 	},
 	"gold_coin": {
 		"id": "gold_coin",
-		"name": "Золотая монета",
-		"description": "Основная валюта",
+		"name": "Gold Coin",
+		"description": "Main currency",
 		"type": "currency",
 		"properties": {
 			"value": 1
 		},
 		"stack_size": 999,
-		"icon_path": "res://assets/icons/gold_coin.png"
+		"icon_path": "res://assets/icons/gold_coin.webp"
+	},
+	"quantum_blade": {
+		"id": "quantum_blade",
+		"name": "Quantum Blade",
+		"description": "A sword that exists in multiple dimensions simultaneously",
+		"type": "weapon",
+		"properties": {
+			"damage": 45,
+			"durability": 200,
+			"attack_speed": 1.5,
+			"dimension_pierce": true
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/quantum_blade.webp"
+	},
+	"dragons_breath_potion": {
+		"id": "dragons_breath_potion",
+		"name": "Dragon's Breath Potion",
+		"description": "Temporarily allows you to breathe fire",
+		"type": "consumable",
+		"properties": {
+			"damage": 30,
+			"duration": 60,
+			"range": 15
+		},
+		"stack_size": 10,
+		"icon_path": "res://assets/icons/dragons_breath_potion.webp"
+	},
+	"chronosphere": {
+		"id": "chronosphere",
+		"name": "Chronosphere",
+		"description": "A mysterious device that can rewind time by 10 seconds",
+		"type": "artifact",
+		"properties": {
+			"cooldown": 300,
+			"time_rewind": 10
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/chronosphere.webp"
+	},
+	"steampunk_jetpack": {
+		"id": "steampunk_jetpack",
+		"name": "Steampunk Jetpack",
+		"description": "Steam-powered flying device with limited fuel",
+		"type": "equipment",
+		"properties": {
+			"flight_duration": 30,
+			"speed": 20,
+			"fuel_capacity": 100
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/steampunk_jetpack.webp"
+	},
+	"mind_crystal": {
+		"id": "mind_crystal",
+		"name": "Mind Crystal",
+		"description": "Allows telepathic communication with party members",
+		"type": "artifact",
+		"properties": {
+			"range": 1000,
+			"energy_cost": 5
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/mind_crystal.webp"
+	},
+	"nanite_armor": {
+		"id": "nanite_armor",
+		"name": "Nanite Armor",
+		"description": "Self-repairing armor made of microscopic robots",
+		"type": "armor",
+		"properties": {
+			"defense": 30,
+			"weight": 8,
+			"repair_rate": 5,
+			"energy_consumption": 2
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/nanite_armor.webp"
+	},
+	"void_bag": {
+		"id": "void_bag",
+		"name": "Void Bag",
+		"description": "A bag that connects to a pocket dimension for storage",
+		"type": "container",
+		"properties": {
+			"slots": 50,
+			"weight_capacity": 500
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/void_bag.webp"
+	},
+	"musical_blade": {
+		"id": "musical_blade",
+		"name": "Musical Blade",
+		"description": "A sword that deals damage based on rhythm combinations",
+		"type": "weapon",
+		"properties": {
+			"base_damage": 20,
+			"combo_multiplier": 1.5,
+			"rhythm_slots": 4
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/musical_blade.webp"
+	},
+	"shape_shifter_mask": {
+		"id": "shape_shifter_mask",
+		"name": "Shape Shifter Mask",
+		"description": "Allows transformation into any previously defeated enemy",
+		"type": "artifact",
+		"properties": {
+			"duration": 120,
+			"cooldown": 600,
+			"memory_slots": 5
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/shape_shifter_mask.webp"
+	},
+	"weather_staff": {
+		"id": "weather_staff",
+		"name": "Weather Staff",
+		"description": "Controls local weather patterns for tactical advantage",
+		"type": "weapon",
+		"properties": {
+			"range": 50,
+			"duration": 30,
+			"energy_cost": 25
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/weather_staff.webp"
+	},
+	"probability_dice": {
+		"id": "probability_dice",
+		"name": "Probability Dice",
+		"description": "Temporarily increases luck and critical hit chance",
+		"type": "artifact",
+		"properties": {
+			"luck_bonus": 25,
+			"crit_chance": 15,
+			"duration": 30
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/probability_dice.webp"
+	},
+	"ghost_pendant": {
+		"id": "ghost_pendant",
+		"name": "Ghost Pendant",
+		"description": "Allows passing through solid objects for a short time",
+		"type": "accessory",
+		"properties": {
+			"duration": 10,
+			"cooldown": 120,
+			"energy_cost": 30
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/ghost_pendant.webp"
+	},
+	"babel_fish": {
+		"id": "babel_fish",
+		"name": "Babel Fish",
+		"description": "Living translator that allows communication with any creature",
+		"type": "companion",
+		"properties": {
+			"languages": "unlimited",
+			"telepathy_range": 10
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/babel_fish.webp"
+	},
+	"pixel_painter": {
+		"id": "pixel_painter",
+		"name": "Pixel Painter",
+		"description": "Creates temporary platforms and bridges using pixel art",
+		"type": "tool",
+		"properties": {
+			"duration": 60,
+			"max_size": 10,
+			"cooldown": 5
+		},
+		"stack_size": 1,
+		"icon_path": "res://assets/icons/pixel_painter.webp"
+	},
+	"memory_flask": {
+		"id": "memory_flask",
+		"name": "Memory Flask",
+		"description": "Stores and replays combat moves for training",
+		"type": "tool",
+		"properties": {
+			"storage_capacity": 10,
+			"replay_duration": 30,
+			"learning_bonus": 15
+		},
+		"stack_size": 5,
+		"icon_path": "res://assets/icons/memory_flask.webp"
 	}
 }
